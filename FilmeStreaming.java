@@ -1,4 +1,4 @@
-public final class FilmeStreaming extends Filme {
+public class FilmeStreaming extends Filme {
     private String plataforma;
 
     public FilmeStreaming(String titulo, int anoLancamento, Diretor diretor, String plataforma) {
@@ -14,5 +14,8 @@ public final class FilmeStreaming extends Filme {
         this.plataforma = plataforma;
     }
 
-    
+    public void exibirDetalhes() {
+        System.out.println("Filme de Streaming - " + getInfoBasica() + ", Plataforma: " + plataforma);
+        System.out.println(getInfoDiretor());
+    }
 }

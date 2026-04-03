@@ -20,5 +20,4 @@ public class Diretor {
     public void setPaisOrigem(String paisOrigem) {
         this.paisOrigem = paisOrigem;
     }
-
 }

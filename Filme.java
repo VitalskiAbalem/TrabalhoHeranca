@@ -33,5 +33,15 @@ public class Filme {
         this.diretor = diretor;
     }
 
-    
+    public void exibirDetalhes() {
+        System.out.print("Título: " + titulo + ", Ano: " + anoLancamento);
+    }
+
+    protected String getInfoBasica() {
+        return "Título: " + titulo + ", Ano: " + anoLancamento;
+    }
+
+    protected String getInfoDiretor() {
+        return "Diretor: " + diretor.getNome() + ", País: " + diretor.getPaisOrigem();
+    }
 }
